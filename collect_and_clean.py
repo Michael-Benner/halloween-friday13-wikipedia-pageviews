@@ -24,7 +24,7 @@ API = 'https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article'
 
 def fetch_article_year(article, year):
     title = urllib.parse.quote(article.replace(' ', '_'), safe='')
-    url = '{}/en.wikipedia.org/all-access/user/{}/daily/{}0101/{}1231'.format(API, title, year, year)
+    url = '{}/en.wikipedia.org/all-access/user/{}/daily/{}010100/{}123100'.format(API, title, year, year)
     request = urllib.request.Request(url, headers={'User-Agent': USER_AGENT, 'Accept': 'application/json'})
     for attempt in range(5):
         try:
