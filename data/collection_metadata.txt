@@ -1,0 +1,6 @@
+Collection timestamp UTC: 2026-11-16T02:48:00.975588+00:00
+Articles requested: 12
+Article-year requests attempted: 120
+Raw records: 43836
+Clean records: 43836
+Failures: 0
