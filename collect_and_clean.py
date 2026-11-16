@@ -5,7 +5,7 @@ import os
 START_YEAR = 2016
 END_YEAR = 2025
 PAUSE_SECONDS = 1.2
-USER_AGENT = 'HalloweenFriday13WikipediaStudy/1.0 (student research; contact: replace-with-your-email@example.com)'
+USER_AGENT = 'HalloweenFriday13WikipediaStudy/1.0 (student research; https://github.com/Michael-Benner)'
 ARTICLES = [
     ('Halloween', 'folklore and superstition'),
     ('Friday the 13th', 'folklore and superstition'),
