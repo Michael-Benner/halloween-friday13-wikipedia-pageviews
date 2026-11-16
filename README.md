@@ -20,9 +20,13 @@ The collector sends sequential requests with an identifying User-Agent, pauses b
 
 Halloween (October 31) is compared with the other dates in October of the same year for the same article. Each Friday the 13th is compared with other Fridays in that month and year. Percentage change is `(event-day views - baseline mean) / baseline mean * 100`. Results are summarized by event and category using mean and median percentage change. This is descriptive, not causal; missing observations are not treated as zero.
 
-## Preliminary findings
+## Findings
 
-Numerical findings are generated from live API responses by `analyze_pageviews.py`; they are not filled with invented values. Run the analysis to print category summaries, create `data/event_comparisons.csv` and `data/category_summary.csv`, and save `figures/event_pageview_changes.png`.
+The completed collection returned **43,836 daily records** for all 12 articles across 2016–2025, with **zero failed article-year requests**. The analysis found that Halloween had the clearest broad seasonal pattern: mean pageviews were above the October baseline in horror (+52.5%), supernatural (+62.6%), and folklore/superstition (+393.2%). The folklore mean is heavily influenced by the *Halloween* article itself, whose pageviews rise sharply on October 31; its category median was +36.9%. True-crime articles showed a smaller mean increase (+9.9%), while historical-disaster articles were below baseline on average (-7.9%).
+
+For Friday the 13th, the folklore/superstition category had a very large mean increase (+2,482.2%), but this is strongly skewed by the *Friday the 13th* article itself, which experiences exceptional readership on those dates. Its category median increase was +232.7%. Other categories had much smaller average changes: true crime +11.1%, horror +5.0%, historical disasters +2.7%, and supernatural -0.7%. These category means should therefore be interpreted alongside medians and individual article results, not as uniform effects across all articles.
+
+The analysis is descriptive. It cannot establish that the dates cause readership changes, and the purposive 12-article sample is not representative of all Wikipedia content. See `data/category_summary.csv` and `data/event_comparisons.csv` for the complete results.
 
 **Figure caption:** Mean percentage change in event-day pageviews relative to within-month comparison days, summarized by event and article category. Positive values indicate higher event-day readership than the baseline.
 
