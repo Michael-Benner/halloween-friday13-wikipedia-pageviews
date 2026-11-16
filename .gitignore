@@ -218,3 +218,10 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Generated full datasets stay local; only the 50-row sample is committed
+data/raw_pageviews.csv
+data/cleaned_pageviews.csv
+data/event_comparisons.csv
+data/category_summary.csv
+data/collection_metadata.txt
